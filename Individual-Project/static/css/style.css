@@ -1,0 +1,62 @@
+.floating-number {
+	text-align: center;
+	display: inline-block;
+/*	background-color: blue;*/
+	width: 24%;
+	font-size: 8em;
+}
+
+.dessert-card {
+	width: 24%;
+	height: 30em;
+/*	background-color: red;*/
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-flex;
+}
+
+.card1 {
+	background-image: url("https://hips.hearstapps.com/hmg-prod/images/cheesecake-cupcakes-1649185920.jpg");
+}
+
+.card2 {
+	background-image: url("https://cdn.hswstatic.com/gif/desserts-update.jpg");
+}
+
+.card3 {
+	background-image: url("https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Sweet-Colorful-Macarons.jpg");
+}
+
+.card4 {
+	background-image: url("https://www.foodandwine.com/thmb/LA6ENpgU9mzakSBcwZBDzIguff8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/HD-200912-r-raspberry-macarons-e5ee990ec25e4bc88a54d7a2e49d7ccd.jpg");
+}
+
+.card5 {
+	background-image: url("https://hips.hearstapps.com/hmg-prod/images/desserts-for-two-1673973847.jpeg?crop=0.977xw:0.498xh;0,0.363xh&resize=1200:*");
+}
+
+.card6{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRXTr4CXjHqESn5YKuxxBuK0wYlHABfTiHyg&usqp=CAU");
+}
+
+.card7{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd6C6NumETurncVdZfrh_rGATRipfY8vmBsw&usqp=CAU");
+}
+
+.card8{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6yiKji7VogDPq7f0bwBAGSZ9IvCaK2l0OXw&usqp=CAU");
+}
+
+
+.dessert-text {
+	font-size: 12em;
+	font-size: 10em;
+	display: inline-flex;
+}
+
+ button {
+            padding: 10px;
+            background-color: #fc03a1;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }

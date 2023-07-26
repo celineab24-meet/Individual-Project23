@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body style="background-color:powderblue;">
+    <a href="/signout"><button>signout</button></a>
+    <h1 style="text-align: center;">OUR BEST DESSERTS</h1>
+
+    <!-- FIRST ROW -->
+    <!-- numbers pt 1-->
+    <div class="floating-number">1</div>
+    <div class="floating-number">2</div>
+    <div class="floating-number">3</div>
+    <div class="floating-number">4</div>
+
+    <!-- image 1 -->
+    <div class="dessert-card card1">
+
+       
+    </div>
+
+    <!-- image 2 -->
+    <div class="dessert-card card2">
+        
+    </div>
+
+    <!-- image 3 -->
+    <div class="dessert-card card3">
+        
+    </div>
+
+    <!-- image 4 -->
+    <div class="dessert-card card4">
+        
+    </div>
+
+    <!-- SECOND ROW -->
+    <!-- numbers pt 1-->
+    <div class="floating-number">5</div>
+    <div class="floating-number">6</div>
+    <div class="floating-number">7</div>
+    <div class="floating-number">8</div>
+
+    <!-- image 6 -->
+    <div class="dessert-card card5">
+
+       
+    </div>
+
+    <!-- image 6 -->
+    <div class="dessert-card card6">
+        
+    </div>
+
+    <!-- image 7 -->
+    <div class="dessert-card card7">
+        
+    </div>
+
+    <!-- image 8 -->
+    <div class="dessert-card card8">
+        
+    </div>
+<h1>
+    <form method="POST" action="/home_page">
+        <label>Which dessert do you like the most?</label>
+        <input type="number" name="title" min=1 max=8>
+
+        <label>Which dessert do you like the least?</label>
+        <input type="number" name="feedback" min=1 max=8>
+
+        <label>Why you didn't like that desserts?</label>
+        <input type="text" name="text" maxlength="280">
+
+        <input type="submit"  value="Submit">
+    </form></h1>
+
+    <div><h1>
+        {% for tweet in tweets %}
+        <ul>
+            <li>{{ tweets[tweet]["full_name"] }}</li>
+            <li>{{ tweets[tweet]["feedback"] }}</li>
+            <li>{{ tweets[tweet]["text"] }}</li>
+            <li>{{ tweets[tweet]["title"] }}</li>
+        </ul>
+            {{bio}}
+        {%endfor%}</h1>
+    </div>
+
+</body>
+</html>
